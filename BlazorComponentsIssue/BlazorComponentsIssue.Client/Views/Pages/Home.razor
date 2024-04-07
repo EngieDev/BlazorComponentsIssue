@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<h1>Issue showcase</h1>
+
+<IssueComponent>
+    <span>Hello 1</span>
+</IssueComponent>
+
+<IssueComponent>
+    @{
+        IssueLocalFunction();
+    }
+</IssueComponent>
+
+@{
+    void IssueLocalFunction()
+    {
+        <span>Hello 2</span>
+    }
+}
